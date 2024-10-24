@@ -1,0 +1,26 @@
+﻿<Window x:Class="Hianyzasok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hianyzasok" Height="350" Width="525">
+    <Grid>
+        <StackPanel Margin="10">
+            <Button Name="btnLoadData" Content="Load Data" Click="btnLoadData_Click" Width="200" Margin="0,0,0,10"/>
+
+            <TextBlock Text="2. Calculate Total Missed Hours:" />
+            <Button Name="btnTotalHours" Content="Show Total Missed Hours" Click="btnTotalHours_Click" Width="200" Margin="0,0,0,10"/>
+            <TextBlock Name="txtTotalHours" Text="Total Hours:" Margin="0,10,0,20"/>
+
+            <TextBlock Text="3. Enter Day (1-30) and Student Name:"/>
+            <TextBox Name="txtDay" Width="100" Margin="0,5,0,5" GotFocus="txtDay_GotFocus" LostFocus="txtDay_LostFocus" Text="Enter Day"/>
+            <TextBox Name="txtStudentName" Width="200" Margin="0,5,0,10" GotFocus="txtStudentName_GotFocus" LostFocus="txtStudentName_LostFocus" Text="Enter Student Name"/>
+
+
+            <Button Name="btnCheckAbsence" Content="Check Absence" Click="btnCheckAbsence_Click" Width="200"/>
+            <TextBlock Name="txtAbsenceResult" Text="Absence Info:" Margin="0,10,0,10"/>
+
+            <Button Name="btnListAbsences" Content="List Absentees for Day" Click="btnListAbsences_Click" Width="200" Margin="0,10,0,10"/>
+            <TextBlock Name="txtAbsenceList" Text="Absentees:" Margin="0,10,0,20"/>
+        </StackPanel>
+    </Grid>
+</Window>
+
